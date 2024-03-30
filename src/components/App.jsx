@@ -2,20 +2,7 @@ import React from "react";
 import Entery from "./Entery";
 import emojipedia from "../emojipedia";
 
-function createEmoji(emojiTerm) {
-  return (
-    <Entery 
-    id = {emojiTerm.id}
-    key = {emojiTerm.id}
-    name = {emojiTerm.name}
-    emoji = {emojiTerm.emoji}
-    meaning = {emojiTerm.meaning}
-    
-    />
-  )
-  
 
-}
 
 function App() {
   return (
@@ -24,7 +11,7 @@ function App() {
       <h1>
         <span>emojipedia</span>
       </h1>
-      {emojipedia.map(createEmoji)}
+      {emojipedia.map( emojiTerm => (<Entery key = {emojiTerm.id} emoji = {emojiTerm.emoji} name = {emojiTerm.name} description = {emojiTerm.meaning} /> ))}
 
       
         

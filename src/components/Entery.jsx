@@ -14,7 +14,7 @@ function Entery (props) {
               <span>{props.name}</span>
             </dt>
             <dd>
-             {props.meaning}
+             {props.description}
             </dd>
         </div>
 

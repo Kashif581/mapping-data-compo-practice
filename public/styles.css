@@ -22,9 +22,8 @@ h1 span {
 
 .dictionary {
   display: flex;
-  justify-content: space-between;
   margin: 4rem auto;
-  max-width: 50%;
+  max-width: 90%;
 }
 
 .dictionary > .term {
